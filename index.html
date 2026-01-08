@@ -1,82 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Melrose Fire District</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-<!-- Official .gov banner -->
 <div class="gov-banner">
-    <div class="gov-banner-content">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/US_flag_48_stars.svg" alt="U.S. flag" class="gov-flag">
-        <p>An official website of the United States government</p>
-        <button class="gov-toggle" aria-expanded="false" aria-controls="gov-info">
-            Here’s how you know
-        </button>
-    </div>
+  <div class="gov-banner-content">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/US_flag_small.png" alt="U.S. flag" class="gov-flag">
+    <span>An official website of the United States government</span>
+    <button class="gov-how-button" onclick="document.getElementById('gov-how').classList.toggle('open')">
+      Here’s how you know
+    </button>
+  </div>
 
-    <div class="gov-info" id="gov-info" hidden>
-        <p><strong>Official websites use .gov</strong><br>
-        A <strong>.gov</strong> website belongs to an official government organization in the United States.</p>
+  <div id="gov-how" class="gov-how-panel">
+    <p><strong>Official websites use .gov</strong><br>
+    A <strong>.gov</strong> website belongs to an official government organization in the United States.</p>
 
-        <p><strong>Secure .gov websites use HTTPS</strong><br>
-        A lock icon (<span aria-hidden="true">🔒</span>) or <strong>https://</strong> means you’ve safely connected to the website.</p>
-    </div>
+    <p><strong>Secure .gov websites use HTTPS</strong><br>
+    A lock (🔒) or <strong>https://</strong> means you’ve safely connected to the website.</p>
+  </div>
 </div>
-
-<header class="site-header">
-    <h1>Melrose Fire District</h1>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
-
-<section class="hero">
-    <h2>Protecting the Melrose Community</h2>
-    <p>Fire protection, emergency response, and community safety services.</p>
-</section>
-
-<section id="about" class="section">
-    <h3>About Us</h3>
-    <p>The Melrose Fire District is committed to safeguarding life, property, and the environment through fire suppression, emergency medical response, and community education.</p>
-</section>
-
-<section id="services" class="section">
-    <h3>Services</h3>
-    <ul>
-        <li>Fire Suppression</li>
-        <li>Emergency Medical Response</li>
-        <li>Fire Safety Education</li>
-        <li>Community Risk Reduction</li>
-    </ul>
-</section>
-
-<section id="contact" class="section">
-    <h3>Contact</h3>
-    <p>Email: info@melrosefire.gov</p>
-    <p>Phone: (555) 555‑5555</p>
-</section>
-
-<footer class="footer">
-    <p>Melrose Fire District</p>
-    <p><a href="#">Accessibility</a> | <a href="#">Privacy Policy</a></p>
-</footer>
-
-<script>
-    const toggle = document.querySelector('.gov-toggle');
-    const info = document.getElementById('gov-info');
-
-    toggle.addEventListener('click', () => {
-        const expanded = toggle.getAttribute('aria-expanded') === 'true';
-        toggle.setAttribute('aria-expanded', !expanded);
-        info.hidden = expanded;
-    });
-</script>
-
-</body>
-</html>
