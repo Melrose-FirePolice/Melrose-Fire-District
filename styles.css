@@ -2,13 +2,41 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
-  background-color: #fff;
+  background: #fff;
   color: #333;
 }
 
-header {
-  background-color: #b22222;
+/* GOV banner */
+.usa-banner {
+  background: #f0f0f0;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.usa-banner__inner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.usa-banner__flag {
+  width: 20px;
+  height: auto;
+}
+
+.usa-banner__info {
+  display: none;
+  padding: 10px 0 0 30px;
+}
+
+.usa-banner__info.open {
+  display: block;
+}
+
+/* Main header */
+.main-header {
+  background: #b22222;
   color: white;
   padding: 20px;
   text-align: center;
@@ -30,7 +58,7 @@ section {
 }
 
 footer {
-  background-color: #f0f0f0;
+  background: #f0f0f0;
   padding: 10px;
   text-align: center;
   font-size: 14px;
@@ -39,42 +67,4 @@ footer {
 footer a {
   color: #005ea2;
   text-decoration: none;
-  margin: 0 5px;
-}
-
-.gov-banner {
-  background: #f0f0f0;
-  padding: 8px 16px;
-  border-bottom: 1px solid #ccc;
-  font-size: 14px;
-}
-
-.gov-banner-content {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.gov-flag {
-  width: 20px;
-  height: auto;
-}
-
-.gov-how-button {
-  background: none;
-  border: none;
-  color: #005ea2;
-  cursor: pointer;
-  text-decoration: underline;
-  font-size: 14px;
-}
-
-.gov-how-panel {
-  display: none;
-  padding: 10px 0 0 28px;
-  font-size: 14px;
-}
-
-.gov-how-panel.open {
-  display: block;
 }
