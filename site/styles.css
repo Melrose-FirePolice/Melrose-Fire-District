@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #333;
+}
+
+/* GOV banner */
+.usa-banner {
+  background: #f0f0f0;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.usa-banner__inner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.usa-banner__flag {
+  width: 20px;
+  height: auto;
+}
+
+.usa-banner__info {
+  display: none;
+  padding: 10px 0 0 30px;
+}
+
+.usa-banner__info.open {
+  display: block;
+}
+
+/* Main header */
+.main-header {
+  background: #b22222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+footer {
+  background: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer a {
+  color: #005ea2;
+  text-decoration: none;
+}
